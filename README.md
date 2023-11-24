@@ -1,7 +1,7 @@
 # KMP Compose Skeleton using Amper
-Basic Compose Multiplaform app using [Amper](https://github.com/JetBrains/amper/tree/main)
+Basic Compose Multiplaform app using Flutter Counter Example.
 
-![amper-kmp](https://github.com/santimattius/kmp-first-amper/assets/22333101/6f16c218-4def-45a1-a1d1-a5e2b5dacdd6)
+![kmp-flutter-counter](https://github.com/santimattius/kmp-flutter-counter/assets/22333101/50adaf00-957b-41fb-8ff2-d514ef7696d5)
 
 ## Check your IDE
 
