@@ -1,0 +1,9 @@
+product: ios/app
+
+dependencies:
+  - ../shared
+
+settings:
+  compose: enabled
+  ios:
+    teamId: FNW7B29QHQ
