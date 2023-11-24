@@ -18,22 +18,28 @@ fun Screen() {
         Scaffold(
                 topBar = { AppBar(title = "Compose Demo Home Page") },
                 floatingActionButton = {
-                    FloatingActionButton(onClick = {
-                        incrementCounter += 1
-                    }) {
-                        Icon(Icons.Default.Add, contentDescription = "Increment")
-                    }
+                    FloatingActionButton(
+                        onClick = {
+                            incrementCounter += 1
+                        },
+                        content = {
+                            Icon(
+                                imageVector = Icons.Default.Add,
+                                contentDescription = "Increment"
+                            )
+                        }
+                    )
                 }
         ) {
             Column(
-                    modifier = Modifier.fillMaxSize().padding(it),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxSize().padding(it),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center,
             ) {
                 Text(text = "You have pushed the button this many times")
                 Text(
-                        text = "$incrementCounter",
-                        style = MaterialTheme.typography.displayLarge
+                    text = "$incrementCounter",
+                    style = MaterialTheme.typography.displayLarge
                 )
             }
         }

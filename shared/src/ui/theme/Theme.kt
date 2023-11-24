@@ -6,7 +6,6 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import kotlin.text.Typography
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -15,7 +14,8 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
+    primary = Blue,
+    primaryContainer = Blue,
     secondary = PurpleGrey40,
     tertiary = Pink40,
     onPrimary = Color.White,
