@@ -1,3 +1,4 @@
 .gradle
 /ios-app/build/
 /shared/build/
+/build
