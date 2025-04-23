@@ -1,4 +1,6 @@
 .gradle
+.kotlin
+.idea
 /ios-app/build/
 /shared/build/
 /build

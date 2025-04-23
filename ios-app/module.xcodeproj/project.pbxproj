@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -11,30 +11,16 @@
 		542173F7C8065E48952A94C8 /* ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		542176CEC936F8A6B9923614 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 542173E41912EDC5FAD7D937 /* app */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		54217B23F209800CE5F8FE50 /* src */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				542176CEC936F8A6B9923614 /* PBXFileSystemSynchronizedBuildFileExceptionSet */,
-			);
-			path = src;
-			sourceTree = SOURCE_ROOT;
-		};
+		54217B23F209800CE5F8FE50 /* src */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = src; sourceTree = SOURCE_ROOT; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		542178ECE0AABC0EB9659E0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -86,11 +72,14 @@
 /* Begin PBXProject section */
 		5421706DBE387A18EAB803E7 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 54217057BD879F85DFDA8228 /* Build configuration list for PBXProject "module" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 5421797A904A5F3C4D34C437;
@@ -106,6 +95,9 @@
 /* Begin PBXResourcesBuildPhase section */
 		5421727698A92FF658BB17F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
@@ -114,6 +106,9 @@
 		54217DBCDDD0FF280961A2AB /* Build Kotlin with Amper */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
+			buildActionMask = 0;
+			files = (
+			);
 			inputPaths = (
 			);
 			name = "Build Kotlin with Amper";
@@ -128,6 +123,9 @@
 /* Begin PBXSourcesBuildPhase section */
 		54217C72DF9649A216A06519 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
@@ -154,18 +152,22 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(TARGET_BUILD_DIR)/$(FRAMEWORKS_FOLDER_PATH)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TARGET_BUILD_DIR)/$(FRAMEWORKS_FOLDER_PATH)",
+				);
 				INFOPLIST_FILE = src/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ios-app";
 				PRODUCT_MODULE_NAME = app;
 				PRODUCT_NAME = "ios-app";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = (
-					1,
-					2,
-				);
+				TARGETED_DEVICE_FAMILY = "1 2";
 			};
 			name = Release;
 		};
@@ -179,10 +181,17 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(TARGET_BUILD_DIR)/$(FRAMEWORKS_FOLDER_PATH)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TARGET_BUILD_DIR)/$(FRAMEWORKS_FOLDER_PATH)",
+				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = src/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "ios-app";
 				PRODUCT_MODULE_NAME = app;
@@ -190,10 +199,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = (
-					1,
-					2,
-				);
+				TARGETED_DEVICE_FAMILY = "1 2";
 			};
 			name = Debug;
 		};
@@ -216,6 +222,7 @@
 				54217718C81E27948D2F617C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

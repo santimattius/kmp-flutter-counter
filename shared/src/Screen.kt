@@ -16,7 +16,7 @@ fun Screen() {
     AppTheme {
         var incrementCounter by remember { mutableStateOf(0) }
         Scaffold(
-                topBar = { AppBar(title = "Compose Demo Home Page") },
+                topBar = { AppBar(title = "Flutter Counter") },
                 floatingActionButton = {
                     FloatingActionButton(
                         onClick = {

@@ -4,6 +4,8 @@ dependencies:
   - ../shared
 
 settings:
-  compose: enabled
+  compose:
+    version: 1.6.10
+    enabled: true
   ios:
     teamId: FNW7B29QHQ
